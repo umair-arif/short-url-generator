@@ -125,6 +125,22 @@
       a:hover {
         text-decoration: underline;
       }
+      .auth-link {
+        color: #4aa3ff;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 8px 16px;
+        border: 1px solid #4aa3ff;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .auth-link:hover {
+        background-color: #4aa3ff;
+        color: white;
+      }
 
       @media (max-width: 600px) {
         form {
@@ -143,6 +159,11 @@
   </head>
   <body>
     <div class="container">
+      <div style="text-align: right; margin-bottom: 20px">
+        <a href="/signup" class="auth-link">Signup</a>
+        <a href="/login" class="auth-link">Login</a>
+      </div>
+
       <h2>🔗 Short URL Generator</h2>
 
       <form action="/url" method="POST">
